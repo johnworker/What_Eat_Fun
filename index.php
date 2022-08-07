@@ -1,75 +1,47 @@
-<!DOCTYPE html>
-<html lang="zh">
+<?php
+/** 
+ * Template Name: index
+ * 
+ * 
+*/
+?>
+<?php get_header(); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>吃什麼網站</title>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- slick CDN -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="./style.css">
-
-    <!-- . 跟此檔案相同資料夾內的其他檔案 -->
-    <!-- .. 在此檔案上一層資料夾內的其他檔案 -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8P8VER0LG8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8P8VER0LG8');
-</script>
-
-<meta name="google-site-verification" content="6NNHAyzslowOZx_wXi6K7FRlzaqn-tVHoS--OV4QEEc" />
-</head>
-
-<body>
     <!-- 導覽列 -->
     <nav data-aos="fade" data-aos-delay="500" data-aos-duration="3000">
         <div id="menu">
             <div class="mini-link-box">
                 <ul class="mini-link">
                     <li>
-                        <a href="./index.html" class="mini-logo">{LEO}</a>
+                        <a href="/wordpress/index.html" class="mini-logo">{LEO}</a>
                     </li>
                     <li>
                         <div class="link-mini-work" href="">
                             美食簡介
                             <ul class="sub-mini-link">
                                 <li>
-                                    <a href="./rice.html">飯類</a>
+                                    <a href="/wordpress/rice.php">飯類</a>
                                 </li>
                                 <li>
-                                    <a href="./noodles.html">麵類</a>
+                                    <a href="/wordpress/noodles.html">麵類</a>
                                 </li>
                                 <li>
-                                    <a href="./snack.html">點心</a>
+                                    <a href="/wordpress/snack.html">點心</a>
                                 </li>
                                 <li>
-                                    <a href="./dessert.html">甜點</a>
+                                    <a href="/wordpress/dessert.html">甜點</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="./recommend.html">美食推薦</a>
+                        <a href="/wordpress/recommend.html">美食推薦</a>
                     </li>
                     <li>
-                        <a href="./game.html">遊戲模式</a>
+                        <a href="/wordpress/game.html">遊戲模式</a>
                     </li>
                     <li>
-                        <a href="./contact.html" data-st-target="list" data-st-duration="1000"
+                        <a href="/wordpress/contact.html" data-st-target="list" data-st-duration="1000"
                             data-st-offset="100">聯絡方式</a>
                     </li>
                 </ul>
@@ -81,31 +53,31 @@
                 美食簡介
                 <ul class="sub-link">
                     <li>
-                        <a href="./rice.html">飯類</a>
+                        <a href="/wordpress/rice.html">飯類</a>
                     </li>
                     <li>
-                        <a href="./noodles.html">麵類</a>
+                        <a href="/wordpress/noodles.html">麵類</a>
                     </li>
                     <li>
-                        <a href="./snack.html">點心</a>
+                        <a href="/wordpress/snack.html">點心</a>
                     </li>
                     <li>
-                        <a href="./dessert.html">甜點</a>
+                        <a href="/wordpress/dessert.html">甜點</a>
                     </li>
                 </ul>
             </div>
-            <a href="./recommend.html">美食推薦</a>
-            <a href="./index.html" class="logo">{LEO}</a>
-            <a href="./game.html">遊戲模式</a>
-            <a href="./contact.html" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
+            <a href="/wordpress/recommend.html">美食推薦</a>
+            <a href="/wordpress/index.html" class="logo">{LEO}</a>
+            <a href="/wordpress/game.html">遊戲模式</a>
+            <a href="/wordpress/contact.html" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
         </div>
         <div id="social">
-            <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png"
+            <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="<?php bloginfo('template_directory') ?>/img/youtube.png"
                     alt="youtube"></a>
-            <a href="https://www.instagram.com/besscomha" target="blank"><img src="./img/instagram.png" alt="instagram"></a>
-            <a href="http://m.facebook.com/yanjun.liao.50?ref=bookmarks" target="blank"><img src="./img/facebook.png"
+            <a href="https://www.instagram.com/besscomha" target="blank"><img src="<?php bloginfo('template_directory') ?>/img/instagram.png" alt="instagram"></a>
+            <a href="http://m.facebook.com/yanjun.liao.50?ref=bookmarks" target="blank"><img src="<?php bloginfo('template_directory') ?>/img/facebook.png"
                     alt="facebook"></a>
-            <a href="https://github.com/" target="blank"><img src="./img/github.png" alt="github"></a>
+            <a href="https://github.com/" target="blank"><img src="<?php bloginfo('template_directory') ?>/img/github.png" alt="github"></a>
         </div>
     </nav>
 
@@ -145,47 +117,47 @@
 
             <div class="mini_box">
                 <div class="mini-card">
-                    <img src="./img/Introduction0.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction0.png" alt="手機螢幕">
                     <h3>主畫面</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction1.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction1.png" alt="手機螢幕">
                     <h3>登入畫面</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction2.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction2.png" alt="手機螢幕">
                     <h3>去過地點</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction3.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction3.png" alt="手機螢幕">
                     <h3>問答模式</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction4.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction4.png" alt="手機螢幕">
                     <h3>角色互動</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction5.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction5.png" alt="手機螢幕">
                     <h3>按鈕提示</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction7.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction7.png" alt="手機螢幕">
                     <h3>骰子</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction8.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction8.png" alt="手機螢幕">
                     <h3>翻牌</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction9.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction9.png" alt="手機螢幕">
                     <h3>輪盤</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction10.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction10.png" alt="手機螢幕">
                     <h3>抽牌</h3>
                 </div>
                 <div class="mini-card">
-                    <img src="img/Introduction11.png" alt="手機螢幕">
+                    <img src="<?php bloginfo('template_directory') ?>/img/Introduction11.png" alt="手機螢幕">
                     <h3>選擇價格</h3>
                 </div>
             </div>
@@ -198,8 +170,8 @@
         <div id="news-content">
             <!-- (.news-card>img+h3{標題三}+p{lorem10}+button{按鈕})*3 -->
             <div class="news-card" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">
-                <img class="recipe1" src="./img/method_change1.png" alt="食譜最新消息">
-                <img class="recipe2" src="./img/method1.png" alt="食譜最新消息">
+                <img class="recipe1" src="<?php bloginfo('template_directory') ?>/img/method_change1.png" alt="食譜最新消息">
+                <img class="recipe2" src="<?php bloginfo('template_directory') ?>/img/method1.png" alt="食譜最新消息">
                 <h4>食譜</h4>
                 <p>進行互動遊戲後，選出當下想吃的食物，提供您食譜方便製作。</p>
                 <button class="btn">
@@ -207,8 +179,8 @@
                 </button>
             </div>
             <div class="news-card" data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="1000">
-                <img class="recipe1" src="./img/method_change2.png" alt="外送最新消息">
-                <img class="recipe2" src="./img/method2.png" alt="外送最新消息">
+                <img class="recipe1" src="<?php bloginfo('template_directory') ?>/img/method_change2.png" alt="外送最新消息">
+                <img class="recipe2" src="<?php bloginfo('template_directory') ?>/img/method2.png" alt="外送最新消息">
                 <h4>外送</h4>
                 <p>適合忙碌或想好好休息的使用者使用，選出愛吃的食物後，系統幫您連接外送平台。</p>
                 <button class="btn">
@@ -216,8 +188,8 @@
                 </button>
             </div>
             <div class="news-card" data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="1000">
-                <img class="recipe1" src="./img/method_change3.png" alt="餐廳最新消息">
-                <img class="recipe2" src="./img/method3.png" alt="餐廳最新消息">
+                <img class="recipe1" src="<?php bloginfo('template_directory') ?>/img/method_change3.png" alt="餐廳最新消息">
+                <img class="recipe2" src="<?php bloginfo('template_directory') ?>/img/method3.png" alt="餐廳最新消息">
                 <h4>餐廳</h4>
                 <p>想出外用餐或多人聚會又不知道如何選餐廳，別擔心系統將統整您的菜單，提供餐廳路線資訊給您。</p>
                 <button class="btn">
@@ -233,62 +205,26 @@
     <h2 class="title-big">最新遊戲</h2>
     <div id="work">
         <div class="work-card">
-            <img src="./img/function_dice.png" alt="遊戲方式">
+            <img src="<?php bloginfo('template_directory') ?>/img/function_dice.png" alt="遊戲方式">
             <h3>骰子</h3>
         </div>
         <div class="work-card">
-            <img src="./img/function_pump.png" alt="遊戲方式">
+            <img src="<?php bloginfo('template_directory') ?>/img/function_pump.png" alt="遊戲方式">
             <h3>抽牌</h3>
         </div>
         <div class="work-card">
-            <img src="./img/function_around.png" alt="遊戲方式">
+            <img src="<?php bloginfo('template_directory') ?>/img/function_around.png" alt="遊戲方式">
             <h3>輪盤</h3>
         </div>
         <div class="work-card">
-            <img src="./img/function_turn.png" alt="遊戲方式">
+            <img src="<?php bloginfo('template_directory') ?>/img/function_turn.png" alt="遊戲方式">
             <h3>翻牌</h3>
         </div>
         <div class="work-card">
-            <img src="./img/function_image.png" alt="遊戲方式">
+            <img src="<?php bloginfo('template_directory') ?>/img/function_image.png" alt="遊戲方式">
             <h3>互動</h3>
         </div>
     </div>
 
 
-    <!-- 頁尾 -->
-    <footer>
-        <div>
-            <a href="" class="logo">{LEO}</a>
-        </div>
-        <small id="copy">
-            &copy; LEO 2021.
-        </small>
-        <div id="link">
-            <a href="./rice.html">美食簡介</a>
-            <a href="./recommend.html">美食推薦</a>
-            <a href="./game.html">遊戲模式</a>
-            <a href="./contact.html">聯絡方式</a>
-        </div>
-    </footer>
-
-    <!-- data-st-top 箭頭要出現的高度 -->
-    <!-- data-st-time 特效的持續時間 -->
-    <a id="arrow" data-st-target="top" data-st-duration="800" data-st-top="300" data-st-time="1000"></a>
-
-
-    <!-- AOS CDN -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- slick CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-</body>
-
-</html>
+    <?php get_footer(); ?>
